@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collegezania</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #111;
+        }
+        .article-container {
+            max-width: 950px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #333;
+            color: #fff;
+            font-size: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .article-container p{
+            padding: 10px 20px;
+            font-size: 25px;
+            font-family: 'Times New Roman', Times, serif;
+
+        }
+        img {
+            width: 100%;
+            height: auto;
+            margin: 10px 0;
+        }
+        .fade-in span {
+            display: block;
+            opacity: 0;
+        }
+        @media (max-width: 768px) {
+            .article-container {
+                padding: 15px;
+                margin: 10px;
+            }
+        }
+        @media (max-width: 480px) {
+            .article-container {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="article-container">
+        <h1 class="fade-in">College Zania :- Wide-ranging College and University Search Site</h1>
+        <img src="https://i.pinimg.com/736x/d9/85/a1/d985a1d35992337b49591fc0be98e16d.jpg" alt="UGC" class="fade-in">
+        
+        <p class="fade-in">
+        
+            With increased competition in academics, selecting an ideal college or university is 
+            instrumental in students envisioning their destiny. As different colleges and universities 
+            have a host of courses, programs, and infrastructures at hand, selection could become 
+            more challenging. Students are able to make an appropriate selection through 
+            dedicated search websites such as College Zaniya to browse and contrast colleges and 
+            universities. <br><br>
+        <mark>   The Demand for University Zania - </mark>   
+            As higher education demand continues to increase, coupled with a host of alternative 
+            choices, it has become hard for students to make informed choices using accurate, 
+            credible, and recent information. University zania provides one portal where it 
+            aggregates colleges and universities with an elaborate database for courses, teachers, 
+            facilities, and admission criteria to guide learners toward the correct institution. 
+            Through such a hub, time is saved, and confusion is removed. Transparency during 
+            higher education selection is guaranteed. 
+            Features of College Zania <br><br>
+            1. University Profiles in detail – An exhaustive repository containing data regarding 
+            numerous universities, such as geographical location, ranking, courses 
+            available, faculty information, and accreditation status. 
+            2. Advance Search and Filtering capabilities – The feature of searching colleges in 
+            terms of geographical location, fee structure, type of program, scholarship, and 
+            student ratings. 
+            3. Admission Rules and Application Deadlines – A concise section where students 
+            can get details regarding application processes, eligibility criteria, and deadlines 
+            for submission. <br><br>
+            4. Student Reviews and Ratings – Feedback from existing students and alumni to 
+            give a genuine review of campus life, teachers, and overall learning experience. 
+            5. Scholarships and Financial Aid – A section for offering details on scholarships, 
+            grants, and loan facilities available for students. 
+            6. Virtual Campus Tours – Interactive virtual tours and multimedia content to 
+            provide students with a real-life experience of campus infrastructure and 
+            facilities. <br><br>
+            Benefits of College Zania 
+            A properly designed website such as College zania has various benefits, including: 
+            Easy Comparison: Students can compare various universities at once on the basis of 
+            important factors such as tuition fees, teaching expertise, and infrastructure. 
+            Accessibility to Correct Information: Current information regarding admission 
+            procedures, ranking changes, and offered courses keeps students updated. 
+            International Student Guidance: Numerous students dream of studying abroad but are 
+            uncertain about visa requirements, cultural aspects, and living costs. A special section 
+            that answers these questions can simplify international applications. 
+            Improved Decision-Making: With information from alumni feedback, online campus 
+            tours, and scholarship opportunities, students can make informed decisions in 
+            selecting the best institution that suits their career aspirations and financial condition. 
+            The Future of College Zania 
+            As technology continuously changes, AI-powered solutions and data analysis will 
+            further accelerate the functionality of College zania. Personalized suggestions, chatbot 
+            support, and predictive analysis will optimize the decision-making process. With the 
+            incorporation of these improvements, College Zaniya will keep transforming the higher 
+            education industry, providing easier access to information and transparency for 
+            students across the globe.  
+            Conclusion <br><br>
+            Education is a driving force for success, and choosing the appropriate college is a 
+            critical part of the process. College zania, an exhaustive online portal focused on 
+            college and university search, makes this process easy by providing thorough, 
+            authentic, and up-to-date information. With advancing technology, College Zania will 
+            be more user-friendly, making students take well-informed decisions for a brighter 
+            academic and professional future. 
+            <br><br>
+            WRITTEN BY:- PALAK PARASAR 
+          
+
+        </p>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+    <script>
+     document.querySelectorAll(".fade-in").forEach(element => {
+    if (element.tagName === "p") {
+        let words = element.innerHTML.split("<br><br>");
+        element.innerHTML = words.map(word => `<span class='line'>${word}</span>`).join("<br><br>");
+    }
+    
+    gsap.from(element, {
+        opacity: 0,
+        y: 30,
+        duration: 2,
+        stagger: 0.3,
+        ease: "power2.out",
+        scrollTrigger: {
+            trigger: element,
+            start: "top 90%",
+            toggleActions: "play none none none"
+        }
+    });
+});
+
+    </script>
+</body>
+</html>

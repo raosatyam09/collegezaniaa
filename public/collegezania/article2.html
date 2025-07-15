@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collegezania</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #111;
+        }
+        .article-container {
+            max-width: 950px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #333;
+            color: #fff;
+            font-size: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .article-container p{
+            padding: 10px 20px;
+            font-size: 25px;
+            font-family: 'Times New Roman', Times, serif;
+
+        }
+        img {
+            width: 100%;
+            height: auto;
+            margin: 10px 0;
+        }
+        .fade-in span {
+            display: block;
+            opacity: 0;
+        }
+        @media (max-width: 768px) {
+            .article-container {
+                padding: 15px;
+                margin: 10px;
+            }
+        }
+        @media (max-width: 480px) {
+            .article-container {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="article-container">
+        <h1 class="fade-in">India boasts a range of prestigious management institutes renowned for their academic</h1>
+        <img src="https://d3jmn01ri1fzgl.cloudfront.net/photoadking/webp_thumbnail/white-management-logo-template-gwf6rq01bd9ec0.webp" alt="india" class="fade-in">
+        
+        <p class="fade-in">
+               
+
+ 1. Indian Institute of Management Bangalore (IIM Bangalore): Founded in 1973, IIM 
+Bangalore is an Institute of National Importance. It has a range of programs, 
+including the flagship two-year MBA, one-year Executive MBA, and specialized 
+programs in Business Analytics. The institute is EQUIS globally accredited and 
+ranks among the top management schools globally. In the Financial Times 
+Global MBA Ranking 2024, its MBA program ranked 47th in the world. <br><Br>
+2. S. P. Jain Institute of Management and Research (SPJIMR), Mumbai: Established 
+in 1981, SPJIMR is a part of the Bharatiya Vidya Bhavan and conducts a variety of 
+management courses. The institution has received the highly coveted “Triple 
+Crown” accreditation—AACSB, AMBA, and EQUIS—making it one of the world’s 
+leading business schools. In the Financial Times Masters in Management (MiM) 
+2023 global rankings, SPJIMR was ranked No. 1 in India’s top management 
+institutions. <br><br>
+3. Indian Institute of Management Udaipur (IIM Udaipur): Founded in 2011, IIM 
+Udaipur has quickly established itself as a prominent institution. It provides a 
+two-year full-time MBA, one-year specialized MBAs in Global Supply Chain 
+Management and Digital Enterprise Management, and a doctoral program. The 
+institute is AACSB accredited and has been ranked in the Financial Times Global 
+Ranking for Management, standing at 72nd globally and 4th in India. <br><br>
+4. T. A. Pai Management Institute (TAPMI), Manipal: Established in 1980, TAPMI 
+provides a two-year residential Post Graduate Diploma in Management with 
+specializations in Human Resources, <mark>Banking and Financial Services, and 
+Marketing & Sales. The institute is dual accredited by AACSB and AMBA, which 
+reflects its dedication to quality education.</mark> 
+5. Jamnalal Bajaj Institute of Management Studies (JBIMS), Mumbai: Founded in 
+1965 as the Department of Management Studies within the University of 
+Mumbai, JBIMS provides a full-time Master of Management Studies (MMS) 
+program, and part-time courses, in addition to a Ph.D. program. The institute 
+ranks among the top 10 business schools in India every year and is renowned for 
+spawning industry leaders. <br><br>
+6. Sydenham Institute of Management Studies, Research and Entrepreneurship 
+Education (SIMSREE), Mumbai: SIMSREE was formed in 1983. It runs a two-year 
+full-time Master of Management Studies (MMS) program, as well as part-time 
+programs in Financial and Marketing Management. The institute is also affiliated 
+to the University of Mumbai and has won a number of awards for its role in 
+management education. <br>
+These institutions are celebrated for their strong academic programs, seasoned faculty 
+members, and significant industry connections that make them favorites for 
+management learning in India. <br>
+WRITTEN BY:- PALAK PARASAR 
+            
+      
+       
+
+        </p>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+    <script>
+     document.querySelectorAll(".fade-in").forEach(element => {
+    if (element.tagName === "p") {
+        let words = element.innerHTML.split("<br><br>");
+        element.innerHTML = words.map(word => `<span class='line'>${word}</span>`).join("<br><br>");
+    }
+    
+    gsap.from(element, {
+        opacity: 0,
+        y: 30,
+        duration: 2,
+        stagger: 0.3,
+        ease: "power2.out",
+        scrollTrigger: {
+            trigger: element,
+            start: "top 90%",
+            toggleActions: "play none none none"
+        }
+    });
+});
+
+    </script>
+</body>
+</html>

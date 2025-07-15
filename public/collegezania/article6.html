@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collegezania</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #111;
+        }
+        .article-container {
+            max-width: 950px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #333;
+            color: #fff;
+            font-size: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .article-container p{
+            padding: 10px 20px;
+            font-size: 25px;
+            font-family: 'Times New Roman', Times, serif;
+
+        }
+        img {
+            width: 100%;
+            height: auto;
+            margin: 10px 0;
+        }
+        .fade-in span {
+            display: block;
+            opacity: 0;
+        }
+        @media (max-width: 768px) {
+            .article-container {
+                padding: 15px;
+                margin: 10px;
+            }
+        }
+        @media (max-width: 480px) {
+            .article-container {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="article-container">
+        <h1 class="fade-in">How AI-based EdTech technologies can revolutionize India’s educational landscape.</h1>
+        <img src="https://static.vecteezy.com/system/resources/previews/011/332/798/non_2x/artificial-intelligence-ai-logo-human-technology-human-digital-robot-tech-icon-design-template-free-vector.jpg" alt="UGC" class="fade-in">
+        
+        <p class="fade-in">
+        
+
+            When the pandemic was at its height, the uptake of ed-tech went into overdrive 
+throughout India, with schools and colleges closing and disruption to learning calling for 
+an immediate solution. With the world slowly getting back to normal, a concerning 
+slump in the sector stood out starkly; a congested market of more than 4,500 start-ups, 
+a harsh funding winter and rising customer acquisition expenses. Industry titans closed 
+down, while others had to cut down en masse. <br><br>
+These trends are a stark reminder of why ed-tech in India must reinvent itself and 
+address issues that really concern the education system of the country.<mark>The time is 
+opportune for sustainable, customer-focused businesses to make an impact but how? </mark> 
+Personalised learning: Rural India harbors the majority of the country’s population and it 
+has many obstacles to quality education. Along with the shortage of proper teaching 
+resources, infrastructural deficiencies impede educational advancement. India is a 
+nation with more mobile devices than desktops and laptops, and digital learning is an 
+ever-present challenge. AI-based learning platforms can tackle these issues in 
+numerous ways. From co-teaching tools for instructors to individualized study guides, 
+AI can offer customized attention to students. Personalisation is scalable, as AI is able 
+to understand the intent and advise individuals on courses they need to take and in 
+what sequence. It identifies study areas most appropriate for people based on their 
+interests and those which need to be improved. <br><br>
+AI as assistant teachers: For schools, institutions and universities that are perpetually in 
+need of funds to finance administrative and assistant work, AI-driven platforms can 
+assist in carrying out assessments, creating lesson plans, taking over repetitive work 
+and enabling teachers to have more time for student needs. Another area is employing 
+online lessons with interactive gaming features, to facilitate increased retention and 
+motivation. Most ed-tech firms are now adding regional languages to AI-powered 
+platforms, helping to make education more accessible. This is what is required in order 
+to democratise access to quality education. 
+Challenges <br><br>
+<em>Most Indians initially used the Internet via smartphones, not conventional tools such as 
+laptops and desktops. With inexpensive Internet and smartphones becoming cheaper, 
+India brought aboard hundreds of millions of new Internet users within only the past 
+half-decade. There is also a digital divide between urban and rural that remains. The 
+challenge thus resides in crafting great, bespoke learning experiences within a mobile 
+phone at scale while optimising for consistent experience across devices and operating 
+systems. </em><br><br>
+The sheer nexus of complexity of different learning needs and multiple types of learners 
+and learning modes is also a challenge. Ed-tech platform vendors are left with hundreds 
+or thousands of customized courses that they will need to maintain rather than one 
+source of content or tests. Personalization involves optimized AI engines that can 
+handle thousands of courses that are customized to some extent. This can be resolved 
+using generative AI that is able to read textbooks, story content and quizzes to deliver 
+real-time individualised experiences to a teacher or student without having to alter the 
+platform. 
+In the midst of the funding winter, India’s ed-tech space needs to rethink itself. 
+Dedicated effort towards balancing its AI empowerment agenda with the nation’s 
+developmental agenda is called for in addressing India’s burning issues in its education 
+system as well as enable the industry to keep pace with India’s mission of making a 
+technologically-equipped workforce in India. <br>
+WRITTEN BY :- PALAK PARASAR 
+           
+        </p>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+    <script>
+     document.querySelectorAll(".fade-in").forEach(element => {
+    if (element.tagName === "p") {
+        let words = element.innerHTML.split("<br><br>");
+        element.innerHTML = words.map(word => `<span class='line'>${word}</span>`).join("<br><br>");
+    }
+    
+    gsap.from(element, {
+        opacity: 0,
+        y: 30,
+        duration: 2,
+        stagger: 0.3,
+        ease: "power2.out",
+        scrollTrigger: {
+            trigger: element,
+            start: "top 90%",
+            toggleActions: "play none none none"
+        }
+    });
+});
+
+    </script>
+</body>
+</html>

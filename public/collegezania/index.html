@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collegezania.com</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="collegezania/style.css">
+</head>
+<body>
+                                        <!-- Header Section -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Collegezania<span>.com</span></div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search for Colleges, Exams, Courses and More..">
+                <button>Search</button>
+            </div>
+            <div class="nav-links">
+               <button><a href="../login/login.html">Login</a></button> 
+                <button><a href="../login/login.html">Sign Up</a></button>
+
+<!-- here we have change -->
+                <img src="" id="profile" alt="user profile" class="hidden">
+                <span id="username" class="hidden"> username</span>
+
+            </div>
+        </nav> 
+    </header>
+
+                                                      <!-- Hero Section -->
+    <section class="hero">
+<div class="hero-overlay">
+<div class="slideshow-container">
+        <div class="slide">
+          <!-- <img src="./images/clg2.webp"> -->
+        </div>
+        <div class="slide">
+        <img src="Collegezania/images/aashish-singh-woKfih75m7I-unsplash.jpg">
+        </div>
+        <div class="slide">
+         <!-- <img src="./images/college6.jpg"> -->
+        </div>
+</div>    
+</div>
+  <h1 class=" typewriter">Search Genuine Colleges, Courses</h1>
+        <div class="search-container">
+            <input type="text" placeholder="Search for colleges, exams, courses and more..">
+            <button class="search-btn">Search</button>
+        </div>
+        <button class="counselling-btn">Find College</button>
+    </section>
+
+                                                             <!-- Programs Section -->
+    <section class="programs">
+        <h2>Select Courses</h2>
+ <!-- Swiper -->
+         <div class="container">
+            <div class="category" id="courseCategory">
+                <a href="/course"></a>
+                <img src="Collegezania/animation/helmet.png" alt="">
+                <h3>Engineering</h3>
+                <p>87 Universities</p>
+            </div>
+            <div class="category" >
+                <a href="/course"></a>
+                <img src="Collegezania/animation/asset-management.png" alt="">
+                <h3>Commerce & Banking</h3>
+                <p>39 Universities</p>
+            </div>
+            <div class="category" >
+                <a href="/course"></a>
+                <img src="Collegezania/animation/manager.png" alt="">
+                <h3>Management</h3>
+                <p>82 Universities</p>
+            </div>
+            <div class="category" >
+                <a href="/course"></a>
+                <img src="Collegezania/animation/medicine (1).png" alt="">
+                <h3>Medical</h3>
+                <p>20 Universities</p>
+            </div>
+            <div class="category"  >
+                <a href="/course"></a>
+                <img src="Collegezania/animation/drugs.png" alt="">
+                <h3>Sciences</h3>
+                <p>56 Universities</p>
+            </div>
+            <div class="category"  >
+                <a href="/course"></a>
+                <img src="Collegezania/animation/hotel.png" alt="">
+                <h3>Hotel Management</h3>
+                <p>4 Universities</p>
+            </div>
+            <div class="category" >
+                <a href="/course"></a>
+                <img src="Collegezania/animation/computer.png" alt="">
+                <h3>Computer Application</h3>
+                <p>34 Universities</p>
+            </div>
+            <div class="category" >
+                <a href="/course"></a>
+                <img src="Collegezania/animation/palette.png" alt="">
+                <h3>Arts & Humanities</h3>
+                <p>42 Universities</p>
+            </div>
+            <div class="category" >
+                <a href="/course"></a>
+                <img src="Collegezania/animation/mass-media.png" alt="">
+                <h3>Mass Communication</h3>
+                <p>11 Universities</p>
+            </div>
+            <div class="category" >
+                <a href="/course"></a>
+                <img src="Collegezania/animation/nurse (1).png" alt="">
+                <h3>Nursing</h3>
+                <p>47 Universities</p>
+            </div>
+            <div class="category" >
+                <a href="/course"></a>
+                <img src="Collegezania/animation/planting (1).png" alt="">
+                <h3>Agriculture</h3>
+                <p>12 Universities</p>
+            </div>
+            <div class="category" >
+                <a href="/course"></a>
+                <img src="Collegezania/animation/photoshop.png" alt="">
+                <h3>Fine Arts and Design</h3>
+                <p>15 Universities</p>
+            </div>
+            <div class="category"  >
+                <a href="/course"></a>
+                <img src="Collegezania/animation/pharmacy.png" alt="">
+                <h3>Pharmacy</h3>
+                <p>16 Universities</p>
+            </div>
+            <div class="category"  >
+                <a href="/course"></a>
+                <img src="Collegezania/animation/law.png" alt="">
+                <h3>Law</h3>
+                <p>17 Universities</p>
+            </div>
+            <div class="category" >
+                <a href="/course"></a>
+                <img src="Collegezania/animation/paramedic (1).png" alt="">
+                <h3>Paramedical</h3>
+                <p>47 Universities</p>
+            </div>
+            <div class="category" >
+                <a href="/course"></a>
+                <img src="Collegezania/animation/dental-care.png" alt="">
+                <h3>Dental</h3>
+                <p>9 Universities</p>
+            </div>
+    </div>
+                                            <!-- Creating colleges list -->
+
+    <h4>Top Colleges</h4>
+   <div class="scroller-container">
+   <button class="scroll-btn left" onclick="scrollLeft()">&#9664;</button>
+    <div class="scroller" id="scroller">
+    <div class="card"> 
+     <img src="/public/collegezania/images/Colleges/Maharshi.png">
+    <div class="text_overlay">
+        <h3>Maharshi Dayanand Saraswati University</h3>
+        <p>Rating: 8.2/10</p>
+        <button class="read-more"> <a href="https://mdsuajmer.ac.in/"> Read More </a> </button>
+    </div>
+    </div>
+    <div class="card"> 
+        <img src="Collegezania/images/Colleges/St_wilfred.webp">
+    <div class="text_overlay">
+    <h3>St Wilfred Institute Of Engineering & Technology</h3>
+    <p>college update</p>
+    <p>Rating: 8.0/10</p>
+    <button class="read-more"> <a href="https://stwilfreds.com/"> Read More</a> </button>
+    </div>
+    </div>
+    <div class="card"> 
+        <img src="Collegezania/images/Colleges/womencollege.jpg">
+        <div class="text_overlay">
+        <h3>Women Engineering College</h3>
+        <p>Exam Update</p>
+        <p>Rating: 9.0/10</p>
+    <button class="read-more"> <a href="https://www.indiascienceandtechnology.gov.in/listingpage/women-engineering-colleges"> Read More </a> </button>
+        </div>
+     </div>
+     <div class="card"> 
+        <img src="Collegezania/images/Colleges/savitri_institute_managemnt.webp">
+      <div class="text_overlay">
+        <h3>Savitri Institute of Management</h3>
+        <p>University Update</p>
+        <p>Rating: 7.6/10</p>
+        <button class="read-more"><a href="https://www.vidhyarthidarpan.com/view/savitri-institute-of-management-8416"> Read More </a>  </button>
+
+    </div>
+    </div>
+      <div class="card"> 
+        <img src="Collegezania/images/Colleges/Ajmer colllge.webp">
+    <div class="text_overlay">
+      <h3>Ajmer Institute Of Technology</h3>
+      <p>All Update</p>
+      <p>Rating: 8.9/10</p>
+      <button class="read-more"><a href="https://www.ecajmer.ac.in/">  Read More </a></button>
+    </div>
+    </div>
+
+    <div class="card"> 
+        <img src="Collegezania/images/Colleges/venus_collge.webp">
+     <div class="text_overlay">
+        <h3>Venus College Of Engineering</h3>
+        <p>Regular Update</p>
+        <p>Rating: 7.9/10</p>
+        <button class="read-more"> <a href="https://collegedunia.com/college/19156-venus-college-of-engineering-ajmer" target="_blank" > Read More</a> </button>
+    </div>
+       
+    </div>    
+        <div class="card"> 
+        <img src="Collegezania/images/Colleges/Aryabhatt_college.jpeg">
+       <div class="text_overlay">
+        <h3>Aryabhatta College Of Engineering & Research</h3>
+        <p>Regular Update</p>
+        <p>Rating: 8.6/10</p>
+        <button class="read-more"><a href="https://aryabhattaajmer.in/courses_b_tech.php"> Read More</a></button>
+       </div>
+    </div> 
+     <div class="card"> 
+        <img src="Collegezania/images/Colleges/central University of college.jpg">
+       <div class="text_overlay">
+        <h3>Central University of Rajasthan</h3>
+        <p>Regular Update</p>
+        <p>Rating: 8.5/10</p>
+        <button class="read-more"> <a href="https://www.curaj.ac.in/" > Read More</a></button>
+       </div>
+     </div>       
+                                                        
+    </div>
+    <button class="scroll-btn right" onclick="scrollRight()">&#9654;</button>
+    </div>
+                                                   <!-- Upcoming Exams -->
+ 
+     <div class="exam_container">
+         <div class="exam_header"> Upcoming Exams</div>
+            <div class="exams_details"> 
+            <div class="exams"><a href="https://jeemain.nta.nic.in/"> JEE</a></div>
+            <div class="exams"><a href="https://neet.nta.nic.in/"> NEET</a></div>
+            <div class="exams"> <a href="https://upsconline.gov.in/"> UPSC</a></div>
+            <div class="exams"><a href="https://cgat.gov.in/"> CAT </a></div>
+            <div class="exams"><a href="https://gate2025.iitr.ac.in/"> GATE</a></div>
+            <div class="exams"><a href="https://ssc.nic.in/"> SSC</a></div>
+        </div>                      
+     </div>
+    </section>
+
+<div class="page2">
+
+      <h4> Latest notifications</h4>
+    <div class="scroller_news" id="scroller_news">
+ 
+    </div>
+</div>
+                                    <!--asking user for details  -->
+
+<div id="page3">
+    <div class="form-container">
+        <h2>Find Your Dream college start now!</h2>
+        <p>Collegezania helping you to find the best college near you</p>
+        <form>
+          <div class="form-group">
+            <input type="text" placeholder="Name" required>
+            <input type="tel" placeholder="Phone" required>
+            <input type="email" placeholder="Email" required>
+          </div>
+          <div class="terms">
+            <input type="checkbox" required>
+            <label>By proceeding ahead you expressly agree to the Collegezania terms of use</label>
+          </div>
+          <button type="submit" id="user_input_btn">Submit Details</button>
+        </form>
+      </div>
+                                                      
+                                     <!-- Footer part -->
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-column">
+            <h5>Explore Courses</h5>
+            <ul>
+                <li><a href="#">Engineering</a></li>
+                <li><a href="#">Commerce & Banking</a></li>
+                <li><a href="#">Management</a></li>
+                <li><a href="#">Medical</a></li>
+                <li><a href="#">Pharmacy</a></li>
+                <li><a href="#">Hotel Management</a></li>
+                <li><a href="#">Agriculture</a></li>
+                <li><a href="#">Law</a></li>
+                <li><a href="#">Mass Communications</a></li>
+                <li><a href="#">Arts & Humanities</a></li>
+            </ul>
+        </div>
+ <div class="footer-column">
+            <h5>Top colleges </h5>
+            <ul>
+                <li><a href="https://mdsuajmer.ac.in/">Maharshi Dayanand Saraswati University</a></li>
+                <li><a href="https://stwilfreds.com/">St Wilfred Institute Of Engineering & Technology</a></li>
+                <li><a href="https://www.indiascienceandtechnology.gov.in/listingpage/women-engineering-colleges">Women Engineering College</a></li>
+                <li><a href="https://www.vidhyarthidarpan.com/view/savitri-institute-of-management-8416">Savitri Institute of Management</a></li>
+                <li><a href="https://www.ecajmer.ac.in/">Ajmer Institute Of Technology</a></li>
+                <li> <a href="https://collegedunia.com/college/19156-venus-college-of-engineering-ajmer">Venus College Of Engineering</a></li>
+                <li> <a href="https://aryabhattaajmer.in/courses_b_tech.php">Aryabhatta College Of Engineering & Research</a></li>
+                <li> <a href="https://www.curaj.ac.in/">Central University of Rajasthan</a></li>
+            </ul>
+ </div>
+
+ <div class="footer-column">
+            <h5>Top Entrance Exams</h5>
+            <ul>
+                <li><a href="https://neet.nta.nic.in/"> NEET</a></li>
+                <li><a href="https://cgat.gov.in/">What exactly is CAT</a></li>
+                <li><a href="https://gate2025.iitr.ac.in/">GATE</a></li>
+                <li><a href="https://upsc.gov.in/">UPSC Civil Service</a></li>
+                <li><a href="https://jeemain.nta.nic.in/">JEE </a></li>
+                <li><a href="https://ssc.nic.in/">SSC</a></li>
+            </ul>
+</div>
+    <div class="footer-column">
+            <h5>Other Links</h5>
+            <ul>
+                <li><a href="/about">About Us</a></li>
+                <li><a href="/blogs">Daily Updates</a></li>
+                <li><a href="/privacy">Privacy Policy</a></li>
+                <li><a href="terms">Terms & Condition</a></li>
+                <li><a href="/contact">Contact Us</a></li>
+                
+            </ul>
+        </div>
+    </div>
+    <hr>
+    <p>Copyright &copy; 2025 collegezania | Developed by Codesaint Technologies Private Limited</p>
+</footer>
+</div>
+                                                       <!-- creating footer for website -->
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script type="module"src="collegezania/script.js"></script>
+</body>
+</html>

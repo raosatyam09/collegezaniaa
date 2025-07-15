@@ -1,0 +1,143 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, rgba(106, 17, 203, 0.5), rgba(37, 117, 252, 0.5));
+}
+.container {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 500px;
+}
+.form-container {
+    text-align: center;
+}
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.button-container button {
+    flex: 1;
+    padding: 0.75rem;
+    border: none;
+    background: #f1f1f1;
+    color: #333;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.button-container button.active {
+    background: #2575fc;
+    color: #fff;
+    
+}
+
+.button-container button:hover {
+    background: #2575fc;
+    color: #fff;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form h2 {
+    font-size: 30px;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.form input {
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+}
+
+.form button {
+    padding: 0.75rem;
+    background: #2575fc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.form button:hover {
+    background: #1a5bbf;
+}
+
+.form p {
+    margin-top: 1rem;
+    color: #666;
+}
+
+.form a {
+    color: #2575fc;
+    text-decoration: none;
+}
+
+.form a:hover {
+    text-decoration: underline;
+}
+
+.hidden {
+    display: none;
+}
+
+#google{
+    margin: 10px;
+    background: #1a5bbf;
+    border-radius: 10px;
+    font-size: 23px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+#google:hover{
+    opacity: 0.9;
+}
+img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%; 
+}
+p{
+    font-size: 20px;
+}
+#loginBtn{
+    font-size: 25px;
+}
+#signupBtn{
+    font-size: 25px;
+}
+::placeholder{
+    font-size: 16px;
+    font-weight: 500;
+}
+#submit{
+    font-size: 25px;
+}
+#cnfm_btn{
+    font-size: 25px;
+}

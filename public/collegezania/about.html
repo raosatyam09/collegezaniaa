@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about</title>
+</head>
+<style>
+
+body{
+    background-color: #F5F5F5;
+}
+
+.ads{
+    margin: 2vw 2vw;
+    width: 95vw;
+    height: 38vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    overflow-y: hidden;
+    
+}
+.ads p{
+    font-size: 1.5vw;
+    word-spacing: 5px;
+    line-height: 40px;
+}
+.ads button{
+    margin: 1vw 1vw;
+    width: 7vw;
+    height: 6vh;
+    background-color: #FF7900;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 22px;
+    font-weight: 600;
+}
+/* Main Container */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    max-width: 1400px;
+    margin-top: 1vw;
+   
+
+}
+
+/* Card Styling */
+.card {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    flex: 1;
+    max-width: 450px;
+}
+/* Headings */
+h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Paragraph Styling */
+p {
+    font-size: 14px;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        width: 90%;
+    }
+}
+</style>
+<body>
+    <div class="ads">        
+        <h1> Advertise with Us-</h1>
+        <p> Collegezania offers advertisers integrated advertising and promotional programs to reach our highly<br> affluent audience of students and parents. you can highlight your college or institute in search</p>
+           <a href="mailto:contactcollegezania@gmail.com" class="mail"><button>Mail us </button> </a>
+         </div>
+
+<!-- location  -->
+
+<div class="container">
+
+<!-- Offices Section -->
+    <div class="card">
+        <h2>Our Office</h2>
+     <div class="office">
+            <p>1423, 14th Floor, Gaur City Mall<br>
+            Greater Noida West, Gautam Buddha Nagar<br>
+            Uttar Pradesh - 201318, India</p>
+        </div>
+    </div>
+
+<!-- Contact Section -->
+    <div class="card">
+        <h2>Get in Touch</h2>
+
+        <div class="contact-info">
+            <h3>Phone</h3>
+            <p>+91-9990003609</p>
+        </div>
+
+        <div class="contact-info">
+            <h3>Email</h3>
+            <p>contactcollegezania@gmail.com</p>
+        </div>
+
+        <div class="contact-info">
+            <h3>WhatsApp</h3>
+            <p>+91-9990003609</p>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collegezania</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #111;
+        }
+        .article-container {
+            max-width: 950px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #333;
+            color: #fff;
+            font-size: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .article-container p{
+            padding: 10px 20px;
+            font-size: 25px;
+            font-family: 'Times New Roman', Times, serif;
+
+        }
+        img {
+            width: 100%;
+            height: auto;
+            margin: 10px 0;
+        }
+        .fade-in span {
+            display: block;
+            opacity: 0;
+        }
+        @media (max-width: 768px) {
+            .article-container {
+                padding: 15px;
+                margin: 10px;
+            }
+        }
+        @media (max-width: 480px) {
+            .article-container {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="article-container">
+        <h1 class="fade-in">Most of the world wide students can’t access to the minimum level of Physical Education</h1>
+        <img src="https://img.freepik.com/premium-vector/physical-education-logo-icon-brand-identity-sign-symbol-template_880781-2235.jpg" alt="UGC" class="fade-in">
+        
+        <p class="fade-in">
+        
+            Most of the world’s schoolchildren still lack access to the minimum level of 
+            physical education, it says in the first-ever Global Status Report on Quality Physical 
+            Education. Most of the world’s schoolchildren still lack access to the minimum 
+            level of physical education, it says in the first-ever Global Status Report on Quality 
+            Physical Education. <br><br>
+           <em> The report, “Global State of Play”, by UNESCO’s education department found that 
+            58 % of countries have included physical education for girls as mandatory only and 
+            that merely 7 % of the world’s schools have introduced boys’ and girls’ equal 
+            physical education time. </em> <br>
+          <mark>  Two-thirds of secondary and over half of primary students around the world do not 
+            receive the minimum weekly physical education. </mark>
+            A team expert informed PTI that fewer than one in two primary school teachers 
+            have had specialist training in physical education. The team also pointed out huge 
+            variations in the funding of physical education across countries – two-thirds spend 
+            less than 2 % of their education budget on it and one country in every 10 spends 
+            more than 7 %. <br<br>
+            “Physical Education (PE) has been the focus of widespread debate among 
+            education and health professionals globally because of its potential to enhance 
+            learning and contribute to students’ overall development. Professional 
+            development opportunities are limited because of lack of funds and/or lack of time 
+            in teachers’ schedules to participate in training.”. 
+            “For example, just 33 % of nations reported offering in-service training (INSET) and 
+            continuous professional development (CPD) to their PE workforce every five years, 
+            which is considerably different from the annual interval recommended,” the report 
+            added. <br><br>
+
+            WRITTEN BY :- PALAK PARASAR
+          
+
+        </p>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+    <script>
+     document.querySelectorAll(".fade-in").forEach(element => {
+    if (element.tagName === "p") {
+        let words = element.innerHTML.split("<br><br>");
+        element.innerHTML = words.map(word => `<span class='line'>${word}</span>`).join("<br><br>");
+    }
+    
+    gsap.from(element, {
+        opacity: 0,
+        y: 30,
+        duration: 2,
+        stagger: 0.3,
+        ease: "power2.out",
+        scrollTrigger: {
+            trigger: element,
+            start: "top 90%",
+            toggleActions: "play none none none"
+        }
+    });
+});
+
+    </script>
+</body>
+</html>

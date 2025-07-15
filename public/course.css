@@ -1,0 +1,135 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+}
+h1{
+    font-size: 2.8vw;
+    font-weight: 600;
+    color: #000;
+}
+.header {
+    color: white;
+    text-align: center;
+    background-color: red;
+}
+.container {
+    display: flex;
+
+}
+.sidebar {
+    width: 28%;
+    margin-top: 2vw;
+    margin-left: 2vw;
+    min-height: 100vh;
+    padding-top: 2vw;
+    padding-left: 1.5vw;
+    background-color: #fff;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);  
+}
+.sidebar h3{
+    font-size: 1.8vw;
+    padding-bottom: 2vw;
+    background: transparent;
+}
+.sidebar select{
+    border-radius: 6px;
+}
+
+.content {
+    width: 100%;
+    margin-left: 1vw;
+}
+.content h3{
+    font-size: 1.5vw;
+    padding-bottom: 2vw;
+}
+.search-result{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+}
+.card {
+    background-color: #fff;
+    border: 1px solid #333;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    overflow: hidden;
+    width: 250px;
+    height: auto;
+    transition: transform 0.2s;
+    margin-bottom: 1vw;
+    flex: 1 1 calc(33.333% -16px);
+    box-sizing: border-box;
+    max-width: calc(33.333%-16px);
+}
+.card img{
+    display: block;
+    width: 100%;
+    
+
+}
+.card:hover {
+    transform: scale(1.02); 
+}
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.card-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+
+}
+.card-container h4 {
+    padding-left: 30%;
+    font-size: 18px;
+}
+.card-container p {
+    margin: 3px 0;
+    color: #000;
+    padding-left: 0.5vw;
+    font-size: 1.1vw;
+    font-weight: 600;
+}
+.card-container a {
+    display: block;
+    margin: 5px 0px;
+    text-decoration: none;
+    color: #0047ab;
+    margin-left: 0.5vw;
+}
+select{
+    width: 18vw;
+    height: 7vh;
+    padding: 0.2vw;
+    margin: 0.5vw;
+    font-size:1.3em;    
+}
+.submit-course{
+    width:10vw;
+    height:6vh;
+    margin:1vw 4vw;
+    text-align: center;
+    font-size: 1.3vw;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #000;
+}
+
+@media (max-width: 768px) {
+    .card {
+        flex: 1 1 calc(50% - 16px); /* 2 cards per row */
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        flex: 1 1 100%; /* 1 card per row */
+    }
+}

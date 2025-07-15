@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collegezania</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #111;
+        }
+        .article-container {
+            max-width: 950px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #333;
+            color: #fff;
+            font-size: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .article-container p{
+            padding: 10px 20px;
+            font-size: 25px;
+            font-family: 'Times New Roman', Times, serif;
+
+        }
+        img {
+            width: 100%;
+            height: auto;
+            margin: 10px 0;
+        }
+        .fade-in span {
+            display: block;
+            opacity: 0;
+        }
+        @media (max-width: 768px) {
+            .article-container {
+                padding: 15px;
+                margin: 10px;
+            }
+        }
+        @media (max-width: 480px) {
+            .article-container {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="article-container">
+        <h1 class="fade-in">CBSE Planning To Hold Board Exams Twice A Year From 2026 </h1>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl_HwqG6w1hu-s0NSef_uuCIYvpnyjELUxrQ&s" alt="india" class="fade-in">
+        
+        <p class="fade-in">
+            <br>
+            Currently, the board exams for Classes 10 and 12 are conducted in February-March. The 
+            Ministry of Education recently held discussions and deliberations with the Central 
+            Board of Secondary Education (CBSE) for holding two board exams in a year from the 
+            next academic session. <br><br>
+            Sharing about the meeting on social media, Union Minister of Education Dharmendra 
+            Pradhan noted that the scheme of these deliberations will soon be placed for public 
+            consultation by CBSE. The decision for holding  two board exams is being taken for 
+            creating a stress-free learning environment for students. <br><br>
+          <mark>  The ministry also directed the government to launch a Global Curriculum for Foreign 
+            Schools for the academic session 2026-27.</mark> In a meeting chaired by education minister 
+            Dharmendra Pradhan, the CBSE was directed to launch CBSE Global Curriculum for 
+            Foreign Schools in the next academic year and prepare a detailed action plan 
+            accordingly.  <br><br>
+            A high-level meeting was chaired by Union Minister Dharmendra Pradhan and other 
+            dignitaries including Secretary, DoSEL, Secretary ER, MEA, heads of CBSE, NCERT, KVS, 
+            NVS along with representatives of global schools.  
+          <em>  Currently, the board exams for Classes 10 and 12 are conducted in February-March. The 
+            three possible options that the board is contemplating is conducting the exams in a 
+            semester system, with the first board exam in January-February and the second one in 
+            March-April or conducting the second set of board exams in June with the 
+            supplementary or improvement exams. </em> 
+            The board exams for Classes 10 and 12 were also split into two terms during the Covid 
+            pandemic as a one-time measure, but the old format of year-end exams resumed a year 
+            later. <br><br>
+            WRITTEN BY :- PALAK PARASAR 
+       
+
+        </p>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+    <script>
+     document.querySelectorAll(".fade-in").forEach(element => {
+    if (element.tagName === "p") {
+        let words = element.innerHTML.split("<br><br>");
+        element.innerHTML = words.map(word => `<span class='line'>${word}</span>`).join("<br><br>");
+    }
+    
+    gsap.from(element, {
+        opacity: 0,
+        y: 30,
+        duration: 2,
+        stagger: 0.3,
+        ease: "power2.out",
+        scrollTrigger: {
+            trigger: element,
+            start: "top 90%",
+            toggleActions: "play none none none"
+        }
+    });
+});
+
+    </script>
+</body>
+</html>

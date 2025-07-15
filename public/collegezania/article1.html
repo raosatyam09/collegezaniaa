@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collegezania</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #111;
+        }
+        .article-container {
+            max-width: 950px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #333;
+            color: #fff;
+            font-size: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .article-container p{
+            padding: 10px 20px;
+            font-size: 25px;
+            font-family: 'Times New Roman', Times, serif;
+
+        }
+        img {
+            width: 100%;
+            height: auto;
+            margin: 10px 0;
+        }
+        .fade-in span {
+            display: block;
+            opacity: 0;
+        }
+        @media (max-width: 768px) {
+            .article-container {
+                padding: 15px;
+                margin: 10px;
+            }
+        }
+        @media (max-width: 480px) {
+            .article-container {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="article-container">
+        <h1 class="fade-in">UGC INITIATIVES TO REVOLUTIONIZE IN INDIA?</h1>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0Aom8Q-KDDslfSq18ngB6gpj0JygcLfisuA&s" alt="UGC" class="fade-in">
+        
+        <p class="fade-in">
+               
+            With the current public discourse over the University Grants Commission’s (UGC) new 
+            initiatives to revolutionize the higher education system in India, the key question is: Do 
+            we stick to the Western model that originally influenced our universities, build a 
+            framework based on our own traditional learning processes, or establish a hybrid model 
+            combining the best of both to address local and international needs? 
+            <em> As is well understood, Western higher education models focus heavily on research that 
+                adds to the knowledge of society. This model encourages cooperation among socially
+                oriented agencies and university departments in collaboration to solve problems, spur 
+                innovation, and create new knowledge. Indian universities, </em>
+                 with the enormous numbers 
+            of students pursuing degrees mainly as a means to guarantee a job, tend to put 
+            research in the backseat. While the UGC has brought in a number of regulations to 
+            make PhD programmes more streamlined, developing a robust research culture is still a 
+            relatively new task for us. <br><br>
+            Considering the UGC’s interest in improving the standards of higher education in our 
+            nation, it would be best if it took suggestions from experts in the field. Some of the 
+            important observations are as follows: 
+            Safeguarding academic freedom is essential to maintain transparency and promote 
+            development. Transparency entails that the appointments of vice chancellors and 
+            registrars should be free from any monetary influence; these roles should be given 
+            purely on the basis of academic success, administrative experience, and the vision the 
+            candidates can contribute to their potential roles. If appointments are based on money, 
+            the very concept of “quality” in higher education loses all meaning. 
+            One of the common problems in our higher education system is political intervention at 
+            local, state, and central levels in key areas like faculty recruitment, syllabus 
+            formulation, and research grants. These are severely weakening the system. Frequently, 
+            the ruling party prescribes what can and cannot be taught. Equally, the research topics 
+            get funded in preference by those who hold power over their desired preferences, 
+            instead of providing the principal investigators with the intellectual autonomy to 
+            research areas of their own interest. Equally, we constantly hear about the impact of 
+            money and influence on the recruitment and promotions of the faculty. Without tackling 
+            these long-standing problems, higher education will forever remain a far-fetched dream 
+            of becoming excellent. 
+            The most important element that must be confronted in our higher education system is 
+            quality, not the undue focus we tend to give to quantity. Higher education should be for 
+            those with a legitimate academic interest in acquiring knowledge. Academic degrees 
+            should not merely be a job requirement. What we learn and what we actually do 
+            professionally often bear little relationship. More often than not, we develop industry
+            specific skills based on hands-on experience upon employment and not upon what we 
+            know from schools and colleges. <br><br>
+            Our education system largely fails in bridging the gap between classroom learning and 
+            real-world application. One of the biggest mistakes we, as a society, continue to make is 
+            equating academic degrees with job eligibility. This mindset has significantly restricted 
+            the true purpose of higher education — pursuing research. Consequently, research is 
+            often seen as just another degree to be earned, rather than as a rigorous intellectual 
+            pursuit aimed at generating new knowledge. 
+
+            <mark> Quantifying a research degree as an essential qualification for the selection of teaching 
+                positions has hugely watered down the integrity of our research programmes. Real 
+                research is an inductive and discretionar</mark>y activity that demands full-time devotion, 
+            strict compliance with stringent guidelines, and, finally, the creation of new 
+            understanding and knowledge in the selected area. 
+            Last but not least, in order to improve India’s higher education system, the UGC should 
+            contemplate adopting a number of key steps. These involve implementing research
+            based evaluations, promoting interdisciplinary learning and critical thinking, and 
+            minimizing use of contract faculty through investments in permanent recruitment and 
+            development. Encouraging research on Indian literature and philosophy, enhancing 
+            community outreach, and maintaining a balance between work and life for faculty and 
+            students are also crucial. Compulsory counselling facilities need to be initiated to aid 
+            student welfare, while universities need to work with policymakers to combat issues of 
+            healthcare, education, and climate change. Providing more autonomy to students to 
+            choose courses, incorporating new areas such as Artificial Intelligence and promoting 
+            student start-ups with university facilitation are also important. All these should be an 
+            integral part of the UGC’s strategic vision to revolutionize higher education in India. 
+
+            <br><br>
+            WRITTEN BY :- PALAK PARASAR  
+
+        </p>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+    <script>
+     document.querySelectorAll(".fade-in").forEach(element => {
+    if (element.tagName === "p") {
+        let words = element.innerHTML.split("<br><br>");
+        element.innerHTML = words.map(word => `<span class='line'>${word}</span>`).join("<br><br>");
+    }
+    
+    gsap.from(element, {
+        opacity: 0,
+        y: 30,
+        duration: 2,
+        stagger: 0.3,
+        ease: "power2.out",
+        scrollTrigger: {
+            trigger: element,
+            start: "top 90%",
+            toggleActions: "play none none none"
+        }
+    });
+});
+
+    </script>
+</body>
+</html>

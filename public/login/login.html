@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Sign Up</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <div class="button-container">
+                <button id="loginBtn" class="active">Login</button>
+                <button id="signupBtn">Sign Up</button>
+            </div>
+            <form id="loginForm" class="form">
+                <h2>Login your account</h2>
+                <input type="email" placeholder="Email" id="email" required>
+                <input type="password" placeholder="Password" id="password" required>
+
+    <button id="google"> <img src="./google.png"> continue with google</button>
+
+                <button type="submit" id="submit">Login</button>
+                <p>Login as college representative &nbsp; <a href="admin.html">Click here</a></p>
+            </form>
+            <form id="signupForm" class="form hidden">
+                <h2>Register your Account</h2>
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <input type="password" placeholder="Confirm Password" required>
+
+    <button id="google1"><img src="./google.png"> continue with google</button>
+
+                <button type="submit" id="cnfm_btn">Sign Up</button>
+            </form>
+        </div>
+    </div>
+    <script type="module" src="login.js"></script>
+</body>
+</html>
+
+
+
+
+
